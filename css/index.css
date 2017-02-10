@@ -1,0 +1,87 @@
+.container
+{
+	background-image: url(./img/kanto.png);
+	 background-size:  100%;
+	 background-repeat: no-repeat;
+	/* width:100%; */
+	overflow : hidden;
+	/* height: 100%; */
+	/*background-size: contain;*/
+}
+
+#button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: red;
+  border: black 2px solid;
+  color: white;
+  text-align: center;
+	text-shadow: black 2px 1.5px 0;
+  font-size: 200%;
+  padding: 1%;
+  width: 20%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-right: 1%;
+  font-family: 'Nova Square', cursive;
+}
+#button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+#button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20%;
+  transition: 0.5s;
+}
+#button:hover span {
+  padding-right: 25%;
+}
+#button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+/*************************************************/
+#acceuil
+{
+	margin-left:40%;
+	margin-top:25%;
+}
+input
+{
+	border-radius: 4px;
+	font-size:25px;
+	height: 5%;
+	color: #f0f088;
+	text-shadow: 1px 1px 0 #383880, 1px -1px 0 #383880, -1px 1px 0 #383880, -1px -1px 0 #383880, 2px 2px 0 #383880, 2px -2px 0 #383880, -2px 2px 0 #383880, -2px -2px 0 #383880;
+	font-family: 'Nova Square', cursive;
+	font-weight: bold;
+}
+img
+{
+	max-width:100%;
+	height:auto;
+}
+label
+{
+	border-radius: 4px;
+	font-size: 500%;
+	height: 15%;
+	text-align: center;
+	color: #f0f088;
+	text-shadow: 2px 2px 0 #383880, 1px -1px 0 #383880, -1px 1px 0 #383880, -1px -1px 0 #383880, 2px 2px 0 #383880, 2px -2px 0 #383880, -2px 2px 0 #383880, -2px -2px 0 #383880;
+	font-family: 'Press Start 2P', cursive;
+	left:-15%;
+	position: relative;
+}
+footer{
+	margin-top:15%;
+	color: black;
+	text-align: center;
+	font-family: 'Nova Square', cursive;
+}

@@ -1,0 +1,95 @@
+<html>
+
+<head>
+	<title>Space Invader</title>
+	<meta charset="utf-8">
+	<link href='css/jeu.css' rel='stylesheet' type='text/css'>
+	<link href='css/pause.css' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Nova+Square" rel="stylesheet">
+	<!-- police de google font-->
+</head>
+
+<body id="background">
+	<!-------------------------------- intégrer une musique-------------------------->
+	<audio preload="auto" autoplay="autoplay" id="audio">
+		<source src="red_gen.mp3" type="audio/mp3" autostart="true"/>
+	</audio>
+	<!------------------------------------------------------------------------------->
+	<!--------- insérerr le score----------------->
+
+	<div id="container">
+		<div>
+			<h2><img src="./css/img/scor.png" class="score"><span id="score"></span> </h2>
+		</div>
+		<div id="bouton">
+			<button class="button" style="vertical-align:middle" onclick="self.location.href='jeu.html'"><span>Rejouer</span></button>
+			<button class="button" style="vertical-align:middle" onclick="self.location.href='index.html'"><span>Retour</span></button>
+			<button class="button" style="vertical-align:middle" onclick="pauseFunction()"><span>Pause</span></button>
+		</div>
+		<!-------------------------------------------->
+		<h1><img src="./css/img/pokelogo.png"/></h1>
+
+		<!----------------------------div des aliens------------------------->
+		<div id="ennemis">
+			<div class="vaisseau"><img src="./css/img/mewto.png" /></div>
+			<div class="vaisseau"><img src="./css/img/mew.png" /></div>
+			<div class="vaisseau"><img src="./css/img/pokeball.png" /></div>
+			<div class="vaisseau"><img src="./css/img/pikachu.png" /></div>
+			<div class="vaisseau"><img src="./css/img/alakazam.png" /></div>
+			<div class="vaisseau"><img src="./css/img/mewto.png" /></div>
+			<div class="vaisseau"><img src="./css/img/mew.png" /></div>
+			<div class="vaisseau"><img src="./css/img/pokeball.png" /></div>
+			<div class="vaisseau"><img src="./css/img/pikachu.png" /></div>
+			<div class="vaisseau"><img src="./css/img/alakazam.png" /></div>
+
+			<div class="vaisseau"><img src="./css/img/alakazam.png" /></div>
+			<div class="vaisseau"><img src="./css/img/pokeball.png" /></div>
+			<div class="vaisseau"><img src="./css/img/pikachu.png" /></div>
+			<div class="vaisseau"><img src="./css/img/mew.png" /></div>
+			<div class="vaisseau"><img src="./css/img/mewto.png" /></div>
+			<div class="vaisseau"><img src="./css/img/alakazam.png" /></div>
+			<div class="vaisseau"><img src="./css/img/pokeball.png" /></div>
+			<div class="vaisseau"><img src="./css/img/pikachu.png" /></div>
+			<div class="vaisseau"><img src="./css/img/mew.png" /></div>
+			<div class="vaisseau"><img src="./css/img/mewto.png" /></div>
+
+			<div class="vaisseau"><img src="./css/img/mewto.png" /></div>
+			<div class="vaisseau"><img src="./css/img/mew.png" /></div>
+			<div class="vaisseau"><img src="./css/img/pokeball.png" /></div>
+			<div class="vaisseau"><img src="./css/img/pikachu.png" /></div>
+			<div class="vaisseau"><img src="./css/img/alakazam.png" /></div>
+			<div class="vaisseau"><img src="./css/img/mewto.png" /></div>
+			<div class="vaisseau"><img src="./css/img/mew.png" /></div>
+			<div class="vaisseau"><img src="./css/img/pokeball.png" /></div>
+			<div class="vaisseau"><img src="./css/img/pikachu.png" /></div>
+			<div class="vaisseau"><img src="./css/img/alakazam.png" /></div>
+		</div>
+		<!------------------------------------------------------------------->
+		<!-------------------Vaisseau gentil---------------------->
+		<div id="cowboy">
+			<img src="./css/img/red.png" />
+		</div>
+		<!-------------------------------------------------------->
+	</div>
+
+	<div id="gameover">
+		<button class="recommencer" style="vertical-align:middle" onclick="self.location.href='jeu.html'"><span>Recommencez</span></button>
+		<h2 id="gameover2">Vous avez perdu<br/></h2>
+	</div>
+	<div id="win">
+		<button class="recommencer" style="vertical-align:middle" onclick="self.location.href='index2.html'" ><span>Niveau Suivant</span></button>
+		<h2 id="win2">Vous avez gagnez<br/></h2>
+	</div>
+	<div id="pause">
+		<div id="acceuil">
+			<p>
+				<label for="pause">PAUSE</label>
+			</p>
+			<button id="button" style="vertical-align:middle" onclick="pauseFunction()"><span>Reprendre</span></button>
+		</div>
+	</div>
+
+	<script src="js/jeu.js"></script>
+</body>
+
+</html>

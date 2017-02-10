@@ -1,0 +1,91 @@
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+html {
+	height: 100%;
+}
+
+#pause {
+	position: absolute;
+	display: none;
+	overflow: hidden;
+	height: 100%;
+	background-image: url(./img/pause.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	width: 100%;
+}
+
+#button {
+	display: inline-block;
+	border-radius: 4px;
+	background-color: #FFE000;
+	border: none;
+	color: #f8cb08;
+	text-shadow: 1px 1px 0 #324895, 1px -1px 0 #324895, -1px 1px 0 #324895, -1px -1px 0 #324895, 2px 2px 0 #324895, 2px -2px 0 #324895, -2px 2px 0 #324895, -2px -2px 0 #324895;
+	text-align: center;
+	font-size: 30px;
+	padding: 2%;
+	width: 25%;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin-left: 8%;
+	font-family: 'Nova Square', cursive;
+}
+
+#button span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+
+#button span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+
+#button:hover span {
+	padding-right: 25px;
+}
+
+#button:hover span:after {
+	opacity: 1;
+	right: 0;
+}
+
+#acceuil {
+	margin-left: 40%;
+	margin-top: 20%;
+}
+
+label {
+	border-radius: 2px;
+	font-size: 1000%;
+	height: 18%;
+	color: #f8cb08;
+	text-shadow: 1px 1px 0 #324895, 1px -1px 0 #324895, -1px 1px 0 #324895, -1px -1px 0 #324895, 2px 2px 0 #324895, 2px -2px 0 #324895, -2px 2px 0 #324895, -2px -2px 0 #324895;
+	font-family: 'Nova Square', cursive;
+}
+.recommencer {
+	display: inline-block;
+	border-radius: 4px;
+	background-color: red;
+	border: black 2px solid;
+	color: #FFFFFF;
+	text-shadow: 1px 1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, -1px -1px 0 #000000, 2px 2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000, -2px -2px 0 #000000;
+	text-align: center;
+	font-size: 30px;
+	padding: 2%;
+	width: 25%;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin-left: 40%;
+	font-family: 'Nova Square', cursive;
+}
